@@ -2,18 +2,39 @@
 <html lang='en'>
 
 <head>
-<title>Anthony R. King Personal Web-Site</title>
+<title>Anthony R. King Project Web-Site</title>
 <meta charset='utf-8'>
+
+<style>
+body {
+  background-color: black;
+  color: #ffc;
+  font-family: 'courier-new', monospace;
+}
+</style>
+
 </head>
 
-<body>
-<h1>Anthony R. King Personal Web-Site</h1>
 
-<p>Deployed from 'gh-pages' branch, in order to be able to work alongside a user site.</p>
+<body>
+<h1>Anthony R. King Project Web-Site</h1>
+
+<p>Managed and deployed using git/GitHub, from 'gh-pages' branch, in order to be able to work alongside a user site.</p>
 
 <h2>Performing Updates</h2>
 
 <p>Make changes to the 'main' branch, commit, then push to the 'gh-pages' branch.</p>
+
+<ul>
+  <li><code>git checkout main</code></li>
+  <li>Make changes</li>
+  <li><code>git add .</code></li>
+  <li><code>git commit -m "Updates made"</code></li>
+  <li><code>git checkout gh-pages</code></li>
+  <li><code>git add .</code></li>
+  <li><code>git commit -m "Deploy new version"</code></li>
+  <li><code>git push origin gh-pages</code></li>
+</ul>
 
 <p>See my <a href="https://codepen.io/tkonan">CodePen</a>.</p>
 </body>
