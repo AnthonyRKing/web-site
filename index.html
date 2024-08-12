@@ -23,7 +23,7 @@ body {
 
 <h2>Performing Updates</h2>
 
-<p>Make changes to the 'main' branch, commit, then push to the 'gh-pages' branch.</p>
+<p>Checkout the 'main' branch, make changes to it, commit the changes, checkout the 'gh-pages' branch, merge the main branch, then push to the 'gh-pages' branch:</p>
 
 <ul>
   <li><code>git checkout main</code></li>
@@ -31,8 +31,7 @@ body {
   <li><code>git add .</code></li>
   <li><code>git commit -m "Updates made"</code></li>
   <li><code>git checkout gh-pages</code></li>
-  <li><code>git add .</code></li>
-  <li><code>git commit -m "Deploy new version"</code></li>
+  <li><code>git merge main<code></li>
   <li><code>git push origin gh-pages</code></li>
 </ul>
 
